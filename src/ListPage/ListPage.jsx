@@ -1,16 +1,12 @@
 import { useState } from 'react';
-import { FiRotateCcw } from "react-icons/fi"; // 초기화 아이콘
+import { FiRotateCcw } from "react-icons/fi";
+
 import SearchBar from '../Component/SearchBar';
-import car from "../Image/exterior1.png";
+import CarList from '../Data/CarList';
 import "../Style/ListPage.css";
 
-const carData = new Array(12).fill({
-  name: "현대 i30 가솔린 1.6 터보 2WD 5인승 인스퍼레이션",
-  image: car,
-});
-
 const handleReset = () => {
-  window.location.reload(); // 또는 state 초기화 구현
+  window.location.reload();
 };
 
 const ListPage = () => {
@@ -94,12 +90,10 @@ const ListPage = () => {
 
             <div className="filter-group">
               <h4>주행거리</h4>
-
               <div className="mileage-labels">
                 <span>0km</span>
                 <span>{maxMileage.toLocaleString()}km</span>
               </div>
-
               <input
                 type="range"
                 min="0"
@@ -112,8 +106,8 @@ const ListPage = () => {
             <div className="filter-group">
               <h4>연식</h4>
               <select>
-                {Array.from({ length: new Date().getFullYear() + 1 - 1985 + 1 }, (_, i) => {
-                  const year = 1985 + i;
+                {Array.from({ length: new Date().getFullYear() - 1984 }, (_, i) => {
+                  const year = new Date().getFullYear() - i;
                   return <option key={year}>{year}</option>;
                 })}
               </select>
@@ -136,12 +130,7 @@ const ListPage = () => {
         </div>
 
         <main className="car-listing">
-          {carData.map((car, idx) => (
-            <div className="car-card" key={idx}>
-              <img src={car.image} alt={car.name} />
-              <p>{car.name}</p>
-            </div>
-          ))}
+          <CarList count={12} showBadges={false} showPrice={false} />
         </main>
       </div>
     </div>

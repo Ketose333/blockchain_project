@@ -5,6 +5,7 @@ import MainPage from './MainPage/MainPage';
 import Login from './Sign/Login';
 import Signup from './Sign/Signup';
 import PasswordReset from './Sign/PasswordReset';
+import TermsAgreement from './Sign/TermsAgreement';
 import ListPage from './ListPage/ListPage';
 import AddCarPage from './AddCarPage/AddCarPage';
 import CarSellPage from './CarSellPage/CarSellPage';
@@ -25,6 +26,7 @@ function App() {
           <Route path="/login" element={<Login />} />
           <Route path="/signup" element={<Signup />} />
           <Route path="/reset-password" element={<PasswordReset />} />
+          <Route path="/terms" element={<TermsAgreement />} />
           <Route path='/list' element={<ListPage />} />
           <Route path="/addcar" element={<AddCarPage />} />
           <Route path="/transaction" element={<TransactionPage />} />

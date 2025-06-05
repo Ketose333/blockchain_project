@@ -1,83 +1,79 @@
 .add-car-page {
+    min-height: 72.8vh;
     display: flex;
     justify-content: center;
     align-items: flex-start;
-    min-height: 72.8vh;
+    padding: 5rem 2rem 2rem;
     color: white;
     font-family: 'Noto Sans KR', sans-serif;
-    padding: 5rem 2rem 2rem;
 }
 
-.form-container {
+.form-section {
     width: 100%;
-    max-width: 700px;
-    padding: 4rem 3rem;
+    max-width: 550px;
     border-radius: 12px;
+    box-sizing: border-box;
 }
 
 .title {
     font-size: 2rem;
-    margin-bottom: 3rem;
+    margin-bottom: 2rem;
     text-align: left;
 }
 
-.car-form {
-    font-size: 1.2rem;
+.form {
+    display: flex;
+    flex-direction: column;
 }
 
 .inline-field {
+    margin-bottom: 1.5rem;
     display: flex;
-    align-items: center;
-    margin-bottom: 2rem;
-    flex-wrap: wrap;
+    flex-direction: column;
 }
 
 .inline-field label {
-    margin-right: 0.8rem;
-    font-size: 1.1rem;
+    margin-bottom: 0.5rem;
+    font-weight: bold;
+    font-size: 1rem;
 }
 
-.inline-field .input {
-    flex: 1;
-    min-width: 300px;
-    padding: 0.75rem 1rem;
-    font-size: 1.1rem;
+.input {
+    width: 100%;
+    padding: 13.2px;
+    border-radius: 5px;
     border: none;
-    border-radius: 6px;
+    font-size: 1.1em;
+    box-sizing: border-box;
     background-color: #25282A;
     color: white;
 }
 
-.inline-field {
-    margin-left: 0.8rem;
-    font-size: 1.1rem;
-}
-
-.note {
-    font-size: 0.95rem;
-    margin: 2rem 0;
+.info-text {
+    font-size: 0.825em;
+    margin: 1.5rem 0;
+    color: #B8D0E9;
     line-height: 1.5;
 }
 
 .button-container {
     display: flex;
     gap: 0.5rem;
-    justify-content: center;
-    margin-top: 2rem;
+    margin-top: 1.5rem;
+    justify-content: space-between;
 }
 
 .submit-button {
-    display: inline-block;
+    all: unset;
+    flex: 1;
+    padding: 13.2px;
+    border: none;
+    border-radius: 5px;
     text-align: center;
-    text-decoration: none;
-    cursor: pointer;
     background-color: #25282A;
     color: white;
-    font-size: 1.2rem;
-    width: 50%;
-    padding: 0.75rem 1rem;
-    border: none;
-    border-radius: 8px;
+    font-size: 1.1em;
+    cursor: pointer;
     transition: background-color 0.3s ease;
 }
 

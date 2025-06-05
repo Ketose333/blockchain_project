@@ -43,7 +43,7 @@ const Header = () => {
                 </div>
                 <nav className="nav-links">
                     <Link to="/addcar">내차팔기</Link>
-                    <Link to="/">내차사기</Link>
+                    <Link to="/list">내차사기</Link>
                 </nav>
             </div>
 

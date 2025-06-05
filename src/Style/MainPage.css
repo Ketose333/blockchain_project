@@ -60,62 +60,6 @@
   transform: translateX(4px);
 }
 
-.car-card {
-  background-color: #131E29;
-  border-radius: 12px;
-  padding: 16px;
-  text-align: center;
-  color: white;
-  width: 300px;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-  transition: transform 0.3s;
-}
-
-.car-card:hover {
-  transform: translateY(-5px);
-}
-
-.car-card img {
-  width: 100%;
-  max-height: 150px;
-  object-fit: contain;
-  margin-bottom: 1rem;
-}
-
-.badges {
-  display: flex;
-  gap: 0.5rem;
-  justify-content: center;
-  margin-bottom: 8px;
-}
-
-.badge {
-  font-size: 0.8rem;
-  padding: 4px 8px;
-  border-radius: 10px;
-}
-
-.badge.diagnose {
-  background-color: #3E4E5E;
-  color: white;
-}
-
-.badge.trust {
-  background-color: #E6EFF7;
-  color: #373A36;
-}
-
-.car-name {
-  font-size: 1rem;
-  font-weight: 500;
-  margin: 12px 0;
-}
-
-.car-price {
-  font-size: 1.5rem;
-  font-weight: bold;
-}
-
 .search-box {
   width: 100%;
   display: flex;

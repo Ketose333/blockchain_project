@@ -1,0 +1,104 @@
+.terms-agreement-page {
+  display: flex;
+  justify-content: center;
+  padding: 4rem 2rem;
+  font-family: 'Noto Sans KR', sans-serif;
+  color: white;
+}
+
+.terms-agreement-container {
+  width: 100%;
+  max-width: 800px;
+  background-color: #101820;
+  border-radius: 16px;
+  padding: 3rem;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+.terms-agreement-title {
+  font-size: 2rem;
+  margin-bottom: 2rem;
+  text-align: left;
+  color: white;
+}
+
+.terms-content-box {
+  background-color: #131E29;
+  padding: 1.5rem;
+  margin: 1.5rem 0;
+  border-radius: 10px;
+  font-size: 1rem;
+  color: #E6EFF7;
+  line-height: 1.8;
+}
+
+.terms-content-box h3 {
+  margin-bottom: 1rem;
+  font-size: 1.1rem;
+  color: #B8D0E9;
+  border-bottom: 1px solid #25282A;
+  padding-bottom: 0.5rem;
+}
+
+.terms-content-box p {
+  margin-bottom: 1.2rem;
+}
+
+.terms-content-box strong {
+  color: #B8D0E9;
+  font-weight: 600;
+}
+
+.terms-checkbox-label {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  margin-top: 1rem;
+}
+
+.terms-checkbox-label input {
+  display: none;
+}
+
+.terms-custom-checkbox {
+  width: 20px;
+  height: 20px;
+  border: 2px solid #AAA;
+  margin-right: 10px;
+  border-radius: 4px;
+  background-color: transparent;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.terms-checkbox-label input:checked + .terms-custom-checkbox::after {
+  content: "";
+  width: 6px;
+  height: 10px;
+  border: solid #B8D0E9;
+  border-width: 0 2px 2px 0;
+  transform: rotate(45deg);
+}
+
+.terms-text {
+  color: white;
+  font-size: 0.95rem;
+}
+
+.terms-button-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 2rem;
+}
+
+.terms-submit-button {
+  width: 50%;
+  padding: 0.75rem 1rem;
+  font-size: 1.2rem;
+  background-color: #25282A;
+  border: none;
+  border-radius: 8px;
+  color: white;
+}
